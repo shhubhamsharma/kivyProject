@@ -1,7 +1,8 @@
 AddLocationForm:
 <AddLocationForm>:
-	input_text:search_box
 	orientation:"vertical"
+	input_text:search_box
+	search_results:search_results_list
 	BoxLayout:
 		height:"40dp"
 		size_hint_y:None
@@ -16,4 +17,5 @@ AddLocationForm:
 			size_hint_x:25
 			text:"Current Location"
 	ListView:
-		item_strings:["New Delhi","Agra"]
+		id:search_results_list
+		item_strings:[]
